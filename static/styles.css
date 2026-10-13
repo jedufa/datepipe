@@ -598,6 +598,7 @@ p {
 
 .form-grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
 }
 
@@ -605,7 +606,15 @@ p {
 .compact-settings,
 .filters {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
+}
+
+.form-grid > *,
+.finder-form > *,
+.compact-settings > *,
+.filters > * {
+  min-width: 0;
 }
 
 .field-label {
