@@ -1,22 +1,56 @@
 # DatePipe
 
-A phone-first local prototype for private surprise-date planning with a partner and trusted accomplices: calendar windows, an idea backlog, discreet plans, reveal hints, checklists, attachments and deterministic matching.
+### Make time for each other. Keep the surprise.
 
-Experimental and unmaintained, looking for a maintainer; independent forks are welcome once licensing is established. There is no guaranteed support, PR review or security update. **This private candidate is not licensed or published: DatePipe-specific first-party distribution authority remains unresolved.**
+Finding a free evening is one thing. Turning it into a thoughtful surprise takes a little more: an idea, a time window, a hint, and a few details worth keeping together.
 
-## Scope and quick start
+DatePipe is a phone-first local prototype for planning dates with a partner and trusted accomplices. Explore ideas, make a plan, and keep its reveal hint, backup and checklist in one place.
 
-This snapshot is the standalone Python backend and mobile-sized browser UI. Native Android, original research/catalog data, browser-account research tooling, deployment/gateway integration and historical evidence are omitted. No mobile binary or hosted service is provided.
+## A look inside
 
-Requires Python 3.11+ on a Unix-like host; verified with Python 3.14.4 on Linux. Windows/macOS and native devices are unverified. Runtime uses only Python's standard library; no API key, pip dependency, external checkout or network service is required.
+<table>
+  <tr>
+    <td valign="top"><strong>Find an idea</strong><br><img src="docs/screenshots/discovery.png" alt="DatePipe browser showing fictional date suggestions" width="250"></td>
+    <td valign="top"><strong>Make a plan</strong><br><img src="docs/screenshots/planning.png" alt="A fictional jazz evening with a hint, backup and Make this plan button" width="250"></td>
+    <td valign="top"><strong>Keep the details together</strong><br><img src="docs/screenshots/plan.png" alt="Saved fictional plan with reveal hint, notes, backup and checklist" width="250"></td>
+  </tr>
+</table>
+
+Actual browser captures at a 390 × 844 phone viewport, using independently authored fictional data. These are browser screenshots, not native Android captures. Demo links use `.invalid` and do not lead to real venues.
+
+## From a free evening to a small surprise
+
+- **Find a starting point.** Browse the fictional idea library with deterministic matching and calendar windows.
+- **Keep the surprise manageable.** Save a visible hint alongside the details you want to reveal later.
+- **Remember the practical bits.** Keep a fallback, attachments and a checklist with each plan.
+- **Come back to it.** Plans and completed checklist steps survive a server restart; browser preferences stay locally.
+
+The source also includes trusted-accomplice planning fields and account prototypes. Those flows are not a verified hosted sharing service. DatePipe is a planning prototype, not a booking service, venue guide or general dating platform. Demo scores describe heuristics and field completeness, not real event quality.
+
+## Run the local demo
+
+Requires Python **3.11+** on a Unix-like host; verified on Linux with **Python 3.14.4**. Runtime uses only the standard library. No API key, account, external checkout or pip package is needed to start.
 
 ```sh
+git clone https://github.com/jedufa/datepipe.git
+cd datepipe
 python3 server.py --host 127.0.0.1 --port 8812
 ```
 
-Open **http://127.0.0.1:8812/**. Start with the fictional demo, pick a calendar week, find ideas, make one plan, inspect its reveal hint/backup/checklist, then restart to check persistence. All people, venues and ideas in `data/` are fictional. Demo quality scores describe heuristics and field completeness, not verified venue/event quality. Links use `.invalid`; they are not real booking or event recommendations. Add your own plans and verify actual places yourself.
+Open **http://127.0.0.1:8812/**. Complete the fictional onboarding, find date ideas, open one, choose **Make this plan**, inspect its details and check off a step. Restart the server to verify persistence. Add your own ideas and verify real places before booking anything.
 
-For tests in a new disposable environment:
+| Scope | Verified facts |
+| --- | --- |
+| Primary demo | Python backend and phone-sized browser UI |
+| Runtime dependencies | Python standard library; native browser APIs |
+| Engineering checks | 103 backend/web tests; nine rendered Chromium checks |
+| Storage | Local JSON/files, pipeline SQLite, browser localStorage |
+| Native/mobile binaries | Android and iOS excluded; no APK or store release |
+| License | [MIT](LICENSE) for first-party code/tests; [upstream notices](THIRD_PARTY_NOTICES.md) separately |
+
+## Test and explore
+
+With Python, Node **22.22.1** and a fresh disposable environment:
 
 ```sh
 python3 -m venv .venv
@@ -26,18 +60,20 @@ node --check static/app.js
 python3 -m py_compile server.py datepipe_backend/*.py
 ```
 
-Node is needed for frontend syntax and the sorting-handler runtime regression. Exact results and limits are in [build and test](docs/BUILD_AND_TEST.md).
+Node runs the frontend sorting regression as well as syntax checking. See [build and test](docs/BUILD_AND_TEST.md) for exact scope and limitations. `server.py` provides HTTP routes and planning, `datepipe_backend/` holds scoring/persistence helpers, and `static/` is the UI. Tests retain product regressions and synthetic fixtures. A small weekly-research report helper remains because existing tests import it.
 
-## Local and network behavior
+## Privacy and boundaries
 
-The server refuses non-loopback binds and rejects foreign Host/Origin/browser fetch-site requests. It is a trusted single-machine prototype, **not a hosted or shared-machine multi-user service**. Local processes can access the default browser context; prototype account endpoints do not change that trust boundary.
+The server accepts only IPv4 loopback binding, rejects foreign Host/Origin/browser fetch-site requests, and disables backend outbound HTTP by default. It is a trusted single-machine prototype; local processes can access its default browser context. It is not safe to expose as a hosted or shared-machine service.
 
-Backend outbound HTTP is off unless explicitly enabled with `DATEPIPE_ALLOW_NETWORK=1`. Without opt-in, AI, source scouting, geocoding and image fetching fall back or report unavailable. Images and connections are limited to this local origin by default; clicking an external link is still a deliberate browser navigation. Optional network features are unverified in this source candidate and can send planning context or location to external services. No real API billing occurred in validation.
+State and reports default to ignored `runtime/`; browser preferences and feedback use localStorage. Ordinary files are not an encrypted vault. An automatically generated private per-state key supports account hashing: retain it with state if using those prototype accounts. The live-data source-ZIP endpoint is disabled. See [security](SECURITY.md).
 
-State, pipeline SQLite and reports are local under ignored `runtime/` by default; browser preferences/feedback use localStorage. The prototype stores ordinary JSON/files, not an encrypted vault. Fallback account hashing uses an automatically generated private per-state runtime key; preserve that key with state if prototype accounts are used. Do not put real private data in a source archive. The old live-data source-ZIP endpoint is disabled; use the reviewed Git source snapshot.
+Optional AI, source scouting, geocoding and image fetching require explicit `DATEPIPE_ALLOW_NETWORK=1`; these integrations are unverified and can send planning context or location to external services. The default synthetic demo makes no external requests. Deliberately following an external link remains a browser navigation.
 
-## Structure and licensing
+The release omits native Android, original couple/research/catalog data, account-backed research tools, live calendars, deployment/gateway integration and private history. Physical devices, geolocation/permissions, actual venue accuracy, provider calls, hosted sharing and production security are unverified. Test coverage percentage has not been measured.
 
-`server.py` provides HTTP routes and planning. `datepipe_backend/` contains matching, source/event scoring and persistence helpers; `static/` contains the phone-first UI. `tests/` retains product regressions and synthetic fixtures. `developer/tools/run_weekly_event_research.py` is retained only because existing tests import its small report helper; other developer infrastructure is absent.
+## Take it further
 
-No first-party LICENSE has been assigned. MIT is a conditional release preference, not an ownership grant. Separately licensed test dependencies have their original texts under `third_party/`; see [notices](THIRD_PARTY_NOTICES.md).
+The source is open so someone else can study the planning workflow, adapt it to their own life, or carry it forward. **Experimental and unmaintained, looking for a maintainer.** Independent forks are welcome; support, PR review, security updates and future releases are not guaranteed. Start with [contributing](CONTRIBUTING.md).
+
+Copyright (c) 2026 Jean-Francois Dufour. First-party code and tests are [MIT licensed](LICENSE); third-party materials retain their own terms.

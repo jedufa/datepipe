@@ -1,6 +1,6 @@
 # Build and test
 
-Private candidate, not licensed or published. Python 3.14.4/Linux, Node 22.22.1 syntax checking, pytest 9.0.2 with hashed dependency pins. Runtime has no third-party imports; Python 3.11+ language/runtime APIs are required but that minimum version was not separately exercised. Unix O_NOFOLLOW is used for private local key files, so Windows is unsupported/unverified here.
+Experimental MIT source prerelease. Python 3.14.4/Linux, Node 22.22.1 syntax checking, pytest 9.0.2 with hashed dependency pins. Runtime has no third-party imports; Python 3.11+ language/runtime APIs are required but that minimum version was not separately exercised. Unix O_NOFOLLOW is used for private local key files, so Windows is unsupported/unverified here.
 
 Use the exact README newcomer commands. Tests run with disposable HOME/state/temp directories, no inherited API keys, pytest plugin autoload disabled, external HTTP transport disabled by default, synthetic profiles/catalogs and fake provider transports.
 
