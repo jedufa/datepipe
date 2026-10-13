@@ -239,8 +239,8 @@
     {
       "id": "demo.slot.0",
       "title": "Synthetic planning window",
-      "start": "2026-10-19T18:00:00",
-      "end": "2026-10-19T21:00:00",
+      "start": "2026-10-19",
+      "end": "2026-10-19",
       "status": "open",
       "tags": [
         "evening"
@@ -250,8 +250,8 @@
     {
       "id": "demo.slot.1",
       "title": "Synthetic planning window",
-      "start": "2026-10-20T18:00:00",
-      "end": "2026-10-20T21:00:00",
+      "start": "2026-10-20",
+      "end": "2026-10-20",
       "status": "open",
       "tags": [
         "evening"
@@ -261,8 +261,8 @@
     {
       "id": "demo.slot.2",
       "title": "Synthetic planning window",
-      "start": "2026-10-21T18:00:00",
-      "end": "2026-10-21T21:00:00",
+      "start": "2026-10-21",
+      "end": "2026-10-21",
       "status": "open",
       "tags": [
         "evening"
@@ -272,8 +272,8 @@
     {
       "id": "demo.slot.3",
       "title": "Synthetic planning window",
-      "start": "2026-10-22T18:00:00",
-      "end": "2026-10-22T21:00:00",
+      "start": "2026-10-22",
+      "end": "2026-10-22",
       "status": "open",
       "tags": [
         "evening"
@@ -283,8 +283,8 @@
     {
       "id": "demo.slot.4",
       "title": "Synthetic planning window",
-      "start": "2026-10-23T18:00:00",
-      "end": "2026-10-23T21:00:00",
+      "start": "2026-10-23",
+      "end": "2026-10-23",
       "status": "open",
       "tags": [
         "evening"
@@ -294,8 +294,8 @@
     {
       "id": "demo.slot.5",
       "title": "Synthetic planning window",
-      "start": "2026-10-24T18:00:00",
-      "end": "2026-10-24T21:00:00",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
       "status": "open",
       "tags": [
         "evening"
@@ -305,8 +305,8 @@
     {
       "id": "demo.slot.6",
       "title": "Synthetic planning window",
-      "start": "2026-10-25T18:00:00",
-      "end": "2026-10-25T21:00:00",
+      "start": "2026-10-25",
+      "end": "2026-10-25",
       "status": "open",
       "tags": [
         "evening"

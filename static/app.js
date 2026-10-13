@@ -294,7 +294,7 @@ async function findDates(event) {
   state.qualityReport = payload.qualityReport || null;
   renderCityResearch();
   await loadResearchReview().catch(() => {});
-  state.allProposals = sortByFeedbackAndVariety(payload.options || []);
+  state.allProposals = (payload.options || []).sort(sortByFeedbackAndVariety);
   applyFilters();
 }
 
