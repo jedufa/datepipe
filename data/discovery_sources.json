@@ -1,0 +1,1066 @@
+{
+  "schema": "datepipe.discovery_sources.v1",
+  "sources": [
+    {
+      "id": "at.vienna.demo-0",
+      "name": "Fictional Vienna quiet intimate jazz music cellar",
+      "url": "https://vienna-demo-0.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Vienna"
+      ],
+      "sourceKind": "jazz-venue",
+      "sourceType": "jazz-venue",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "jazz",
+        "music",
+        "quiet",
+        "wine"
+      ],
+      "searchHints": [
+        "Vienna",
+        "jazz music quiet wine"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.vienna.demo-1",
+      "name": "Fictional Vienna quiet museum gallery art tour",
+      "url": "https://vienna-demo-1.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Vienna"
+      ],
+      "sourceKind": "gallery",
+      "sourceType": "gallery",
+      "sourceRole": "quiet|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "museum",
+        "gallery",
+        "art",
+        "quiet",
+        "indoor"
+      ],
+      "searchHints": [
+        "Vienna",
+        "museum gallery art quiet indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.vienna.demo-2",
+      "name": "Fictional Vienna calm wine cooking tasting workshop",
+      "url": "https://vienna-demo-2.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Vienna"
+      ],
+      "sourceKind": "tasting-provider",
+      "sourceType": "tasting-provider",
+      "sourceRole": "private-value|reservation",
+      "trustLevel": "medium",
+      "categories": [
+        "wine",
+        "food",
+        "cooking",
+        "tasting",
+        "culinary"
+      ],
+      "searchHints": [
+        "Vienna",
+        "wine food cooking tasting culinary"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.vienna.demo-3",
+      "name": "Fictional Vienna casual outdoor park walk and market music",
+      "url": "https://vienna-demo-3.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Vienna"
+      ],
+      "sourceKind": "outdoor-operator",
+      "sourceType": "outdoor-operator",
+      "sourceRole": "short-spontaneous|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "outdoor",
+        "walk",
+        "market",
+        "music",
+        "casual",
+        "low-cost"
+      ],
+      "searchHints": [
+        "Vienna",
+        "outdoor walk market music casual low-cost"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.vienna.demo-4",
+      "name": "Fictional Vienna weird interactive craft photography puzzle workshop",
+      "url": "https://vienna-demo-4.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Vienna"
+      ],
+      "sourceKind": "workshop-provider",
+      "sourceType": "workshop-provider",
+      "sourceRole": "experimental|private-value",
+      "trustLevel": "medium",
+      "categories": [
+        "weird",
+        "workshop",
+        "craft",
+        "photo",
+        "puzzle",
+        "hands-on"
+      ],
+      "searchHints": [
+        "Vienna",
+        "weird workshop craft photo puzzle hands-on"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.vienna.demo-5",
+      "name": "Fictional Vienna early cinema bookstore dessert evening",
+      "url": "https://vienna-demo-5.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Vienna"
+      ],
+      "sourceKind": "cinema",
+      "sourceType": "cinema",
+      "sourceRole": "quiet|evening-compatible",
+      "trustLevel": "medium",
+      "categories": [
+        "cinema",
+        "bookstore",
+        "calm",
+        "short",
+        "easy",
+        "nearby"
+      ],
+      "searchHints": [
+        "Vienna",
+        "cinema bookstore calm short easy nearby"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.vienna.demo-6",
+      "name": "Fictional Vienna hidden neighborhood local unusual discovery guide",
+      "url": "https://vienna-demo-6.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Vienna"
+      ],
+      "sourceKind": "local-guide-editorial",
+      "sourceType": "local-guide-editorial",
+      "sourceRole": "local-curated|editorial",
+      "trustLevel": "medium",
+      "categories": [
+        "hidden",
+        "neighborhood",
+        "local",
+        "unusual",
+        "quiet",
+        "discovery"
+      ],
+      "searchHints": [
+        "Vienna",
+        "hidden neighborhood local unusual quiet discovery"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.vienna.demo-7",
+      "name": "Fictional Vienna small indoor theatre comedy dance evening",
+      "url": "https://vienna-demo-7.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Vienna"
+      ],
+      "sourceKind": "venue-calendar",
+      "sourceType": "venue-calendar",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "theatre",
+        "comedy",
+        "dance",
+        "music",
+        "warm",
+        "indoor"
+      ],
+      "searchHints": [
+        "Vienna",
+        "theatre comedy dance music warm indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.graz.demo-0",
+      "name": "Fictional Graz quiet intimate jazz music cellar",
+      "url": "https://graz-demo-0.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Graz"
+      ],
+      "sourceKind": "jazz-venue",
+      "sourceType": "jazz-venue",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "jazz",
+        "music",
+        "quiet",
+        "wine"
+      ],
+      "searchHints": [
+        "Graz",
+        "jazz music quiet wine"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.graz.demo-1",
+      "name": "Fictional Graz quiet museum gallery art tour",
+      "url": "https://graz-demo-1.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Graz"
+      ],
+      "sourceKind": "gallery",
+      "sourceType": "gallery",
+      "sourceRole": "quiet|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "museum",
+        "gallery",
+        "art",
+        "quiet",
+        "indoor"
+      ],
+      "searchHints": [
+        "Graz",
+        "museum gallery art quiet indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.graz.demo-2",
+      "name": "Fictional Graz calm wine cooking tasting workshop",
+      "url": "https://graz-demo-2.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Graz"
+      ],
+      "sourceKind": "tasting-provider",
+      "sourceType": "tasting-provider",
+      "sourceRole": "private-value|reservation",
+      "trustLevel": "medium",
+      "categories": [
+        "wine",
+        "food",
+        "cooking",
+        "tasting",
+        "culinary"
+      ],
+      "searchHints": [
+        "Graz",
+        "wine food cooking tasting culinary"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.graz.demo-3",
+      "name": "Fictional Graz casual outdoor park walk and market music",
+      "url": "https://graz-demo-3.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Graz"
+      ],
+      "sourceKind": "outdoor-operator",
+      "sourceType": "outdoor-operator",
+      "sourceRole": "short-spontaneous|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "outdoor",
+        "walk",
+        "market",
+        "music",
+        "casual",
+        "low-cost"
+      ],
+      "searchHints": [
+        "Graz",
+        "outdoor walk market music casual low-cost"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.graz.demo-4",
+      "name": "Fictional Graz weird interactive craft photography puzzle workshop",
+      "url": "https://graz-demo-4.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Graz"
+      ],
+      "sourceKind": "workshop-provider",
+      "sourceType": "workshop-provider",
+      "sourceRole": "experimental|private-value",
+      "trustLevel": "medium",
+      "categories": [
+        "weird",
+        "workshop",
+        "craft",
+        "photo",
+        "puzzle",
+        "hands-on"
+      ],
+      "searchHints": [
+        "Graz",
+        "weird workshop craft photo puzzle hands-on"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.graz.demo-5",
+      "name": "Fictional Graz early cinema bookstore dessert evening",
+      "url": "https://graz-demo-5.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Graz"
+      ],
+      "sourceKind": "cinema",
+      "sourceType": "cinema",
+      "sourceRole": "quiet|evening-compatible",
+      "trustLevel": "medium",
+      "categories": [
+        "cinema",
+        "bookstore",
+        "calm",
+        "short",
+        "easy",
+        "nearby"
+      ],
+      "searchHints": [
+        "Graz",
+        "cinema bookstore calm short easy nearby"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.graz.demo-6",
+      "name": "Fictional Graz hidden neighborhood local unusual discovery guide",
+      "url": "https://graz-demo-6.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Graz"
+      ],
+      "sourceKind": "local-guide-editorial",
+      "sourceType": "local-guide-editorial",
+      "sourceRole": "local-curated|editorial",
+      "trustLevel": "medium",
+      "categories": [
+        "hidden",
+        "neighborhood",
+        "local",
+        "unusual",
+        "quiet",
+        "discovery"
+      ],
+      "searchHints": [
+        "Graz",
+        "hidden neighborhood local unusual quiet discovery"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.graz.demo-7",
+      "name": "Fictional Graz small indoor theatre comedy dance evening",
+      "url": "https://graz-demo-7.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Graz"
+      ],
+      "sourceKind": "venue-calendar",
+      "sourceType": "venue-calendar",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "theatre",
+        "comedy",
+        "dance",
+        "music",
+        "warm",
+        "indoor"
+      ],
+      "searchHints": [
+        "Graz",
+        "theatre comedy dance music warm indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.linz.demo-0",
+      "name": "Fictional Linz quiet intimate jazz music cellar",
+      "url": "https://linz-demo-0.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Linz"
+      ],
+      "sourceKind": "jazz-venue",
+      "sourceType": "jazz-venue",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "jazz",
+        "music",
+        "quiet",
+        "wine"
+      ],
+      "searchHints": [
+        "Linz",
+        "jazz music quiet wine"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.linz.demo-1",
+      "name": "Fictional Linz quiet museum gallery art tour",
+      "url": "https://linz-demo-1.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Linz"
+      ],
+      "sourceKind": "gallery",
+      "sourceType": "gallery",
+      "sourceRole": "quiet|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "museum",
+        "gallery",
+        "art",
+        "quiet",
+        "indoor"
+      ],
+      "searchHints": [
+        "Linz",
+        "museum gallery art quiet indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.linz.demo-2",
+      "name": "Fictional Linz calm wine cooking tasting workshop",
+      "url": "https://linz-demo-2.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Linz"
+      ],
+      "sourceKind": "tasting-provider",
+      "sourceType": "tasting-provider",
+      "sourceRole": "private-value|reservation",
+      "trustLevel": "medium",
+      "categories": [
+        "wine",
+        "food",
+        "cooking",
+        "tasting",
+        "culinary"
+      ],
+      "searchHints": [
+        "Linz",
+        "wine food cooking tasting culinary"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.linz.demo-3",
+      "name": "Fictional Linz casual outdoor park walk and market music",
+      "url": "https://linz-demo-3.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Linz"
+      ],
+      "sourceKind": "outdoor-operator",
+      "sourceType": "outdoor-operator",
+      "sourceRole": "short-spontaneous|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "outdoor",
+        "walk",
+        "market",
+        "music",
+        "casual",
+        "low-cost"
+      ],
+      "searchHints": [
+        "Linz",
+        "outdoor walk market music casual low-cost"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.linz.demo-4",
+      "name": "Fictional Linz weird interactive craft photography puzzle workshop",
+      "url": "https://linz-demo-4.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Linz"
+      ],
+      "sourceKind": "workshop-provider",
+      "sourceType": "workshop-provider",
+      "sourceRole": "experimental|private-value",
+      "trustLevel": "medium",
+      "categories": [
+        "weird",
+        "workshop",
+        "craft",
+        "photo",
+        "puzzle",
+        "hands-on"
+      ],
+      "searchHints": [
+        "Linz",
+        "weird workshop craft photo puzzle hands-on"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.linz.demo-5",
+      "name": "Fictional Linz early cinema bookstore dessert evening",
+      "url": "https://linz-demo-5.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Linz"
+      ],
+      "sourceKind": "cinema",
+      "sourceType": "cinema",
+      "sourceRole": "quiet|evening-compatible",
+      "trustLevel": "medium",
+      "categories": [
+        "cinema",
+        "bookstore",
+        "calm",
+        "short",
+        "easy",
+        "nearby"
+      ],
+      "searchHints": [
+        "Linz",
+        "cinema bookstore calm short easy nearby"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.linz.demo-6",
+      "name": "Fictional Linz hidden neighborhood local unusual discovery guide",
+      "url": "https://linz-demo-6.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Linz"
+      ],
+      "sourceKind": "local-guide-editorial",
+      "sourceType": "local-guide-editorial",
+      "sourceRole": "local-curated|editorial",
+      "trustLevel": "medium",
+      "categories": [
+        "hidden",
+        "neighborhood",
+        "local",
+        "unusual",
+        "quiet",
+        "discovery"
+      ],
+      "searchHints": [
+        "Linz",
+        "hidden neighborhood local unusual quiet discovery"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.linz.demo-7",
+      "name": "Fictional Linz small indoor theatre comedy dance evening",
+      "url": "https://linz-demo-7.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Linz"
+      ],
+      "sourceKind": "venue-calendar",
+      "sourceType": "venue-calendar",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "theatre",
+        "comedy",
+        "dance",
+        "music",
+        "warm",
+        "indoor"
+      ],
+      "searchHints": [
+        "Linz",
+        "theatre comedy dance music warm indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.salzburg.demo-0",
+      "name": "Fictional Salzburg quiet intimate jazz music cellar",
+      "url": "https://salzburg-demo-0.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Salzburg"
+      ],
+      "sourceKind": "jazz-venue",
+      "sourceType": "jazz-venue",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "jazz",
+        "music",
+        "quiet",
+        "wine"
+      ],
+      "searchHints": [
+        "Salzburg",
+        "jazz music quiet wine"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.salzburg.demo-1",
+      "name": "Fictional Salzburg quiet museum gallery art tour",
+      "url": "https://salzburg-demo-1.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Salzburg"
+      ],
+      "sourceKind": "gallery",
+      "sourceType": "gallery",
+      "sourceRole": "quiet|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "museum",
+        "gallery",
+        "art",
+        "quiet",
+        "indoor"
+      ],
+      "searchHints": [
+        "Salzburg",
+        "museum gallery art quiet indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.salzburg.demo-2",
+      "name": "Fictional Salzburg calm wine cooking tasting workshop",
+      "url": "https://salzburg-demo-2.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Salzburg"
+      ],
+      "sourceKind": "tasting-provider",
+      "sourceType": "tasting-provider",
+      "sourceRole": "private-value|reservation",
+      "trustLevel": "medium",
+      "categories": [
+        "wine",
+        "food",
+        "cooking",
+        "tasting",
+        "culinary"
+      ],
+      "searchHints": [
+        "Salzburg",
+        "wine food cooking tasting culinary"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.salzburg.demo-3",
+      "name": "Fictional Salzburg casual outdoor park walk and market music",
+      "url": "https://salzburg-demo-3.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Salzburg"
+      ],
+      "sourceKind": "outdoor-operator",
+      "sourceType": "outdoor-operator",
+      "sourceRole": "short-spontaneous|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "outdoor",
+        "walk",
+        "market",
+        "music",
+        "casual",
+        "low-cost"
+      ],
+      "searchHints": [
+        "Salzburg",
+        "outdoor walk market music casual low-cost"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.salzburg.demo-4",
+      "name": "Fictional Salzburg weird interactive craft photography puzzle workshop",
+      "url": "https://salzburg-demo-4.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Salzburg"
+      ],
+      "sourceKind": "workshop-provider",
+      "sourceType": "workshop-provider",
+      "sourceRole": "experimental|private-value",
+      "trustLevel": "medium",
+      "categories": [
+        "weird",
+        "workshop",
+        "craft",
+        "photo",
+        "puzzle",
+        "hands-on"
+      ],
+      "searchHints": [
+        "Salzburg",
+        "weird workshop craft photo puzzle hands-on"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.salzburg.demo-5",
+      "name": "Fictional Salzburg early cinema bookstore dessert evening",
+      "url": "https://salzburg-demo-5.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Salzburg"
+      ],
+      "sourceKind": "cinema",
+      "sourceType": "cinema",
+      "sourceRole": "quiet|evening-compatible",
+      "trustLevel": "medium",
+      "categories": [
+        "cinema",
+        "bookstore",
+        "calm",
+        "short",
+        "easy",
+        "nearby"
+      ],
+      "searchHints": [
+        "Salzburg",
+        "cinema bookstore calm short easy nearby"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.salzburg.demo-6",
+      "name": "Fictional Salzburg hidden neighborhood local unusual discovery guide",
+      "url": "https://salzburg-demo-6.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Salzburg"
+      ],
+      "sourceKind": "local-guide-editorial",
+      "sourceType": "local-guide-editorial",
+      "sourceRole": "local-curated|editorial",
+      "trustLevel": "medium",
+      "categories": [
+        "hidden",
+        "neighborhood",
+        "local",
+        "unusual",
+        "quiet",
+        "discovery"
+      ],
+      "searchHints": [
+        "Salzburg",
+        "hidden neighborhood local unusual quiet discovery"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.salzburg.demo-7",
+      "name": "Fictional Salzburg small indoor theatre comedy dance evening",
+      "url": "https://salzburg-demo-7.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Salzburg"
+      ],
+      "sourceKind": "venue-calendar",
+      "sourceType": "venue-calendar",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "theatre",
+        "comedy",
+        "dance",
+        "music",
+        "warm",
+        "indoor"
+      ],
+      "searchHints": [
+        "Salzburg",
+        "theatre comedy dance music warm indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.innsbruck.demo-0",
+      "name": "Fictional Innsbruck quiet intimate jazz music cellar",
+      "url": "https://innsbruck-demo-0.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Innsbruck"
+      ],
+      "sourceKind": "jazz-venue",
+      "sourceType": "jazz-venue",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "jazz",
+        "music",
+        "quiet",
+        "wine"
+      ],
+      "searchHints": [
+        "Innsbruck",
+        "jazz music quiet wine"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.innsbruck.demo-1",
+      "name": "Fictional Innsbruck quiet museum gallery art tour",
+      "url": "https://innsbruck-demo-1.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Innsbruck"
+      ],
+      "sourceKind": "gallery",
+      "sourceType": "gallery",
+      "sourceRole": "quiet|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "museum",
+        "gallery",
+        "art",
+        "quiet",
+        "indoor"
+      ],
+      "searchHints": [
+        "Innsbruck",
+        "museum gallery art quiet indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.innsbruck.demo-2",
+      "name": "Fictional Innsbruck calm wine cooking tasting workshop",
+      "url": "https://innsbruck-demo-2.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Innsbruck"
+      ],
+      "sourceKind": "tasting-provider",
+      "sourceType": "tasting-provider",
+      "sourceRole": "private-value|reservation",
+      "trustLevel": "medium",
+      "categories": [
+        "wine",
+        "food",
+        "cooking",
+        "tasting",
+        "culinary"
+      ],
+      "searchHints": [
+        "Innsbruck",
+        "wine food cooking tasting culinary"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.innsbruck.demo-3",
+      "name": "Fictional Innsbruck casual outdoor park walk and market music",
+      "url": "https://innsbruck-demo-3.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Innsbruck"
+      ],
+      "sourceKind": "outdoor-operator",
+      "sourceType": "outdoor-operator",
+      "sourceRole": "short-spontaneous|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "outdoor",
+        "walk",
+        "market",
+        "music",
+        "casual",
+        "low-cost"
+      ],
+      "searchHints": [
+        "Innsbruck",
+        "outdoor walk market music casual low-cost"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.innsbruck.demo-4",
+      "name": "Fictional Innsbruck weird interactive craft photography puzzle workshop",
+      "url": "https://innsbruck-demo-4.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Innsbruck"
+      ],
+      "sourceKind": "workshop-provider",
+      "sourceType": "workshop-provider",
+      "sourceRole": "experimental|private-value",
+      "trustLevel": "medium",
+      "categories": [
+        "weird",
+        "workshop",
+        "craft",
+        "photo",
+        "puzzle",
+        "hands-on"
+      ],
+      "searchHints": [
+        "Innsbruck",
+        "weird workshop craft photo puzzle hands-on"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.innsbruck.demo-5",
+      "name": "Fictional Innsbruck early cinema bookstore dessert evening",
+      "url": "https://innsbruck-demo-5.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Innsbruck"
+      ],
+      "sourceKind": "cinema",
+      "sourceType": "cinema",
+      "sourceRole": "quiet|evening-compatible",
+      "trustLevel": "medium",
+      "categories": [
+        "cinema",
+        "bookstore",
+        "calm",
+        "short",
+        "easy",
+        "nearby"
+      ],
+      "searchHints": [
+        "Innsbruck",
+        "cinema bookstore calm short easy nearby"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.innsbruck.demo-6",
+      "name": "Fictional Innsbruck hidden neighborhood local unusual discovery guide",
+      "url": "https://innsbruck-demo-6.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Innsbruck"
+      ],
+      "sourceKind": "local-guide-editorial",
+      "sourceType": "local-guide-editorial",
+      "sourceRole": "local-curated|editorial",
+      "trustLevel": "medium",
+      "categories": [
+        "hidden",
+        "neighborhood",
+        "local",
+        "unusual",
+        "quiet",
+        "discovery"
+      ],
+      "searchHints": [
+        "Innsbruck",
+        "hidden neighborhood local unusual quiet discovery"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    },
+    {
+      "id": "at.innsbruck.demo-7",
+      "name": "Fictional Innsbruck small indoor theatre comedy dance evening",
+      "url": "https://innsbruck-demo-7.example.invalid/events",
+      "scope": "city",
+      "cities": [
+        "Innsbruck"
+      ],
+      "sourceKind": "venue-calendar",
+      "sourceType": "venue-calendar",
+      "sourceRole": "evening-compatible|local-secret",
+      "trustLevel": "medium",
+      "categories": [
+        "theatre",
+        "comedy",
+        "dance",
+        "music",
+        "warm",
+        "indoor"
+      ],
+      "searchHints": [
+        "Innsbruck",
+        "theatre comedy dance music warm indoor"
+      ],
+      "refreshCadenceDays": 7,
+      "verificationRule": "Fictional demo only, not real research."
+    }
+  ],
+  "synthetic": true
+}

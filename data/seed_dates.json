@@ -1,0 +1,320 @@
+{
+  "profile": {
+    "plannerName": "Planner A",
+    "partnerName": "Partner B",
+    "homeBase": "Vienna",
+    "likes": [
+      "quiet art",
+      "walk",
+      "small venues"
+    ],
+    "avoid": [
+      "crowded clubs"
+    ],
+    "budgetComfort": "casual",
+    "freeTime": "an evening",
+    "radiusKm": 8,
+    "searchKeywords": [
+      "quiet",
+      "art",
+      "walk"
+    ],
+    "privacyDefault": "secret until departure"
+  },
+  "ideas": [
+    {
+      "id": "demo.idea.0",
+      "title": "Fictional quiet gallery tour",
+      "category": "cultural",
+      "duration": "normal evening",
+      "timing": "flexible",
+      "stretch": "safe-stretch",
+      "energy": "medium",
+      "budget": "casual",
+      "fit": 85,
+      "why": "Synthetic planning example; not a real venue or event.",
+      "steps": [
+        "Choose a time together",
+        "Verify a real location before making a booking"
+      ],
+      "tags": [
+        "museum",
+        "gallery",
+        "art",
+        "quiet"
+      ],
+      "eventUrl": "https://example.invalid/demo/0",
+      "imageUrl": "",
+      "sourceName": "Fictional demo source",
+      "visibleHint": "A synthetic idea for the demo",
+      "backup": "Stay home with a book if plans change."
+    },
+    {
+      "id": "demo.idea.1",
+      "title": "Fictional small tasting workshop",
+      "category": "culinary",
+      "duration": "normal evening",
+      "timing": "flexible",
+      "stretch": "safe-stretch",
+      "energy": "medium",
+      "budget": "casual",
+      "fit": 85,
+      "why": "Synthetic planning example; not a real venue or event.",
+      "steps": [
+        "Choose a time together",
+        "Verify a real location before making a booking"
+      ],
+      "tags": [
+        "wine",
+        "food",
+        "cooking",
+        "workshop"
+      ],
+      "eventUrl": "https://example.invalid/demo/1",
+      "imageUrl": "",
+      "sourceName": "Fictional demo source",
+      "visibleHint": "A synthetic idea for the demo",
+      "backup": "Stay home with a book if plans change."
+    },
+    {
+      "id": "demo.idea.2",
+      "title": "Fictional small jazz evening",
+      "category": "social",
+      "duration": "normal evening",
+      "timing": "flexible",
+      "stretch": "safe-stretch",
+      "energy": "medium",
+      "budget": "casual",
+      "fit": 85,
+      "why": "Synthetic planning example; not a real venue or event.",
+      "steps": [
+        "Choose a time together",
+        "Verify a real location before making a booking"
+      ],
+      "tags": [
+        "jazz",
+        "music",
+        "small",
+        "venue"
+      ],
+      "eventUrl": "https://example.invalid/demo/2",
+      "imageUrl": "",
+      "sourceName": "Fictional demo source",
+      "visibleHint": "A synthetic idea for the demo",
+      "backup": "Stay home with a book if plans change."
+    },
+    {
+      "id": "demo.idea.3",
+      "title": "Fictional short park walk",
+      "category": "sportive",
+      "duration": "normal evening",
+      "timing": "flexible",
+      "stretch": "safe-stretch",
+      "energy": "medium",
+      "budget": "casual",
+      "fit": 85,
+      "why": "Synthetic planning example; not a real venue or event.",
+      "steps": [
+        "Choose a time together",
+        "Verify a real location before making a booking"
+      ],
+      "tags": [
+        "outdoor",
+        "walk",
+        "low",
+        "effort"
+      ],
+      "eventUrl": "https://example.invalid/demo/3",
+      "imageUrl": "",
+      "sourceName": "Fictional demo source",
+      "visibleHint": "A synthetic idea for the demo",
+      "backup": "Stay home with a book if plans change."
+    },
+    {
+      "id": "demo.idea.4",
+      "title": "Fictional craft workshop",
+      "category": "different",
+      "duration": "normal evening",
+      "timing": "flexible",
+      "stretch": "safe-stretch",
+      "energy": "medium",
+      "budget": "casual",
+      "fit": 85,
+      "why": "Synthetic planning example; not a real venue or event.",
+      "steps": [
+        "Choose a time together",
+        "Verify a real location before making a booking"
+      ],
+      "tags": [
+        "craft",
+        "atelier",
+        "experimental"
+      ],
+      "eventUrl": "https://example.invalid/demo/4",
+      "imageUrl": "",
+      "sourceName": "Fictional demo source",
+      "visibleHint": "A synthetic idea for the demo",
+      "backup": "Stay home with a book if plans change."
+    },
+    {
+      "id": "demo.idea.5",
+      "title": "Fictional calm reading evening",
+      "category": "romantic",
+      "duration": "normal evening",
+      "timing": "flexible",
+      "stretch": "safe-stretch",
+      "energy": "medium",
+      "budget": "casual",
+      "fit": 85,
+      "why": "Synthetic planning example; not a real venue or event.",
+      "steps": [
+        "Choose a time together",
+        "Verify a real location before making a booking"
+      ],
+      "tags": [
+        "quiet",
+        "bookstore",
+        "relaxed"
+      ],
+      "eventUrl": "https://example.invalid/demo/5",
+      "imageUrl": "",
+      "sourceName": "Fictional demo source",
+      "visibleHint": "A synthetic idea for the demo",
+      "backup": "Stay home with a book if plans change."
+    },
+    {
+      "id": "demo.idea.6",
+      "title": "Fictional early cinema session",
+      "category": "standard",
+      "duration": "normal evening",
+      "timing": "flexible",
+      "stretch": "safe-stretch",
+      "energy": "medium",
+      "budget": "casual",
+      "fit": 85,
+      "why": "Synthetic planning example; not a real venue or event.",
+      "steps": [
+        "Choose a time together",
+        "Verify a real location before making a booking"
+      ],
+      "tags": [
+        "cinema",
+        "easy",
+        "nearby"
+      ],
+      "eventUrl": "https://example.invalid/demo/6",
+      "imageUrl": "",
+      "sourceName": "Fictional demo source",
+      "visibleHint": "A synthetic idea for the demo",
+      "backup": "Stay home with a book if plans change."
+    },
+    {
+      "id": "demo.idea.7",
+      "title": "Fictional rooftop meal",
+      "category": "premium",
+      "duration": "normal evening",
+      "timing": "flexible",
+      "stretch": "safe-stretch",
+      "energy": "medium",
+      "budget": "casual",
+      "fit": 85,
+      "why": "Synthetic planning example; not a real venue or event.",
+      "steps": [
+        "Choose a time together",
+        "Verify a real location before making a booking"
+      ],
+      "tags": [
+        "dinner",
+        "skyline",
+        "private"
+      ],
+      "eventUrl": "https://example.invalid/demo/7",
+      "imageUrl": "",
+      "sourceName": "Fictional demo source",
+      "visibleHint": "A synthetic idea for the demo",
+      "backup": "Stay home with a book if plans change."
+    }
+  ],
+  "slots": [
+    {
+      "id": "demo.slot.0",
+      "title": "Synthetic planning window",
+      "start": "2026-10-19T18:00:00",
+      "end": "2026-10-19T21:00:00",
+      "status": "open",
+      "tags": [
+        "evening"
+      ],
+      "notes": "Fictional demo schedule"
+    },
+    {
+      "id": "demo.slot.1",
+      "title": "Synthetic planning window",
+      "start": "2026-10-20T18:00:00",
+      "end": "2026-10-20T21:00:00",
+      "status": "open",
+      "tags": [
+        "evening"
+      ],
+      "notes": "Fictional demo schedule"
+    },
+    {
+      "id": "demo.slot.2",
+      "title": "Synthetic planning window",
+      "start": "2026-10-21T18:00:00",
+      "end": "2026-10-21T21:00:00",
+      "status": "open",
+      "tags": [
+        "evening"
+      ],
+      "notes": "Fictional demo schedule"
+    },
+    {
+      "id": "demo.slot.3",
+      "title": "Synthetic planning window",
+      "start": "2026-10-22T18:00:00",
+      "end": "2026-10-22T21:00:00",
+      "status": "open",
+      "tags": [
+        "evening"
+      ],
+      "notes": "Fictional demo schedule"
+    },
+    {
+      "id": "demo.slot.4",
+      "title": "Synthetic planning window",
+      "start": "2026-10-23T18:00:00",
+      "end": "2026-10-23T21:00:00",
+      "status": "open",
+      "tags": [
+        "evening"
+      ],
+      "notes": "Fictional demo schedule"
+    },
+    {
+      "id": "demo.slot.5",
+      "title": "Synthetic planning window",
+      "start": "2026-10-24T18:00:00",
+      "end": "2026-10-24T21:00:00",
+      "status": "open",
+      "tags": [
+        "evening"
+      ],
+      "notes": "Fictional demo schedule"
+    },
+    {
+      "id": "demo.slot.6",
+      "title": "Synthetic planning window",
+      "start": "2026-10-25T18:00:00",
+      "end": "2026-10-25T21:00:00",
+      "status": "open",
+      "tags": [
+        "evening"
+      ],
+      "notes": "Fictional demo schedule"
+    }
+  ],
+  "plans": [],
+  "attachments": [],
+  "coupleMemory": []
+}

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>DatePipe</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">private surprise planner</p>
+          <h1>DatePipe</h1>
+        </div>
+        <button id="refreshBtn" class="icon-button" title="Refresh">↻</button>
+      </header>
+
+      <p class="warning-line">Fictional demo ideas and venues. Add your own plans and verify real places before booking.</p>
+      <section class="hero-panel finder">
+        <div class="section-heading first">
+          <div>
+            <p class="eyebrow">next move</p>
+            <h2>Find date ideas</h2>
+          </div>
+          <span id="aiStatus" class="pill">local</span>
+        </div>
+
+        <form id="findForm" class="finder-form simple-search">
+          <input name="searchDate" id="searchDate" type="hidden">
+          <label class="wide city-field">
+            City
+            <input name="homeBase" id="findCity" list="homeBaseOptions" autocomplete="address-level2">
+          </label>
+          <div class="weekend-picker wide">
+            <p class="field-label">Pick a calendar week</p>
+            <div id="weekendRail" class="weekend-rail" aria-label="Weekend choices"></div>
+          </div>
+          <button class="primary-button wide" type="submit">Find date ideas</button>
+        </form>
+        <div id="cityResearchPanel" class="city-research hidden" aria-live="polite"></div>
+      </section>
+
+      <section class="panel suggestions-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">new options</p>
+            <h2>Suggestions</h2>
+          </div>
+          <span id="suggestionCount" class="pill">0</span>
+        </div>
+        <form class="filters" id="filters">
+          <label>
+            Date
+            <select name="date">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label>
+            Date style
+            <select name="category">
+              <option value="">All</option>
+              <option value="standard">Standard</option>
+              <option value="sportive">Sportive</option>
+              <option value="different">Different</option>
+              <option value="cultural">Cultural</option>
+              <option value="culinary">Culinary</option>
+              <option value="romantic">Romantic</option>
+              <option value="social">Double date</option>
+              <option value="premium">Premium</option>
+            </select>
+          </label>
+          <label>
+            Time
+            <select name="duration">
+              <option value="">All</option>
+              <option value="short">Short</option>
+              <option value="normal evening">Normal evening</option>
+              <option value="long evening">Long evening</option>
+              <option value="half day">Half day</option>
+            </select>
+          </label>
+          <label>
+            Surprise
+            <select name="stretch">
+              <option value="">All</option>
+              <option value="familiar">Familiar</option>
+              <option value="safe-stretch">Safe stretch</option>
+              <option value="outside-zone">Outside zone</option>
+              <option value="spicy">Spicy</option>
+            </select>
+          </label>
+        </form>
+        <div id="proposalList" class="stack"></div>
+      </section>
+
+      <section class="panel favorites-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">saved for later</p>
+            <h2>Favorites</h2>
+          </div>
+          <span id="favoriteCount" class="pill">0</span>
+        </div>
+        <div id="favoriteList" class="status-list"></div>
+      </section>
+
+      <section class="panel dismissed-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">not considered</p>
+            <h2>Hidden ideas</h2>
+          </div>
+          <button id="resetHiddenBtn" class="tiny-button" type="button">Reset</button>
+        </div>
+        <div id="hiddenList" class="status-list"></div>
+      </section>
+
+      <section class="panel booked-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">already planned</p>
+            <h2>Booked dates</h2>
+          </div>
+          <span id="bookedCount" class="pill">0</span>
+        </div>
+        <div id="bookedList" class="status-list"></div>
+      </section>
+
+      <section class="panel review-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">quality control</p>
+            <h2>Review queue</h2>
+          </div>
+          <button id="refreshReviewBtn" class="tiny-button" type="button">Refresh</button>
+        </div>
+        <div id="researchReviewPanel" class="review-stack"></div>
+      </section>
+
+      <section class="panel weekly-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">source freshness</p>
+            <h2>Weekly research</h2>
+          </div>
+          <button id="refreshWeeklyResearchBtn" class="tiny-button" type="button">Refresh</button>
+        </div>
+        <div id="weeklyResearchPanel" class="review-stack">
+          <div class="empty">No weekly research report loaded yet.</div>
+        </div>
+      </section>
+
+      <section class="panel release-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">release check</p>
+            <h2>Product score</h2>
+          </div>
+          <button id="runReleaseBtn" class="tiny-button" type="button">Run</button>
+        </div>
+        <div id="releaseScorePanel" class="review-stack">
+          <div class="empty">Run a no-user release check for the selected city and upcoming weeks.</div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">planning view</p>
+            <h2>Date windows</h2>
+          </div>
+          <span id="dateCount" class="pill">0</span>
+        </div>
+        <div id="dateList" class="status-list"></div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Quick settings</h2>
+          <button id="saveSettingsBtn" class="secondary-button" type="button">Save</button>
+        </div>
+        <form id="settingsForm" class="compact-settings">
+          <label>
+            Home base
+            <input name="homeBase" list="homeBaseOptions" autocomplete="address-level2">
+            <datalist id="homeBaseOptions">
+              <option value="Vienna"></option>
+              <option value="Graz"></option>
+              <option value="Linz"></option>
+              <option value="Salzburg"></option>
+            </datalist>
+          </label>
+          <button id="useLocationBtn" class="secondary-button" type="button">Use current location</button>
+          <label>
+            Budget comfort
+            <select name="budgetComfort">
+              <option value="casual">casual</option>
+              <option value="nice">nice</option>
+              <option value="premium">premium sometimes</option>
+              <option value="free">mostly free</option>
+            </select>
+          </label>
+          <label>
+            Free time
+            <select name="freeTime">
+              <option value="2 hours">2 hours</option>
+              <option value="evening">an evening</option>
+              <option value="half day">half day</option>
+              <option value="weekend">weekend</option>
+            </select>
+          </label>
+          <label>
+            Frequency
+            <select name="frequency">
+              <option value="weekly">once a week</option>
+              <option value="biweekly">every second week</option>
+              <option value="monthly">once a month</option>
+            </select>
+          </label>
+          <label>
+            Travel distance
+            <select name="radiusKm">
+              <option value="3">nearby</option>
+              <option value="6">across town</option>
+              <option value="12">whole city</option>
+              <option value="30">day trip</option>
+            </select>
+          </label>
+          <label class="wide">
+            Search keyword
+            <select name="searchKeywords">
+              <option value="comedy">comedy</option>
+              <option value="art">art</option>
+              <option value="dance">dance</option>
+              <option value="food">food</option>
+              <option value="outdoor">outdoor</option>
+              <option value="music">music</option>
+              <option value="weird">weird</option>
+              <option value="quiet">quiet</option>
+            </select>
+          </label>
+          <label class="wide">
+            Impossible days
+            <select name="impossibleDays">
+              <option value="">no fixed blocked day</option>
+              <option value="Monday">Mondays</option>
+              <option value="Tuesday">Tuesdays</option>
+              <option value="Wednesday">Wednesdays</option>
+              <option value="Thursday">Thursdays</option>
+              <option value="Friday">Fridays</option>
+              <option value="Saturday">Saturdays</option>
+              <option value="Sunday">Sundays</option>
+            </select>
+          </label>
+        </form>
+      </section>
+
+      <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+        <div class="modal-card">
+          <div class="section-heading first">
+            <h2 id="modalTitle">Details</h2>
+            <button id="modalClose" class="icon-button">×</button>
+          </div>
+          <div id="modalBody"></div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

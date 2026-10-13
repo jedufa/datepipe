@@ -1,0 +1,358 @@
+{
+  "schema": "datepipe.synthetic_user_models.v2",
+  "purpose": "Fake release-test users for DatePipe recommendation QA. These models are city-independent, test-only, and must not be used as production personalization data.",
+  "testDate": "2026-06-12",
+  "testCities": ["Vienna", "Graz", "Linz", "Salzburg", "Innsbruck"],
+  "models": [
+    {
+      "id": "husband_quiet_art_private",
+      "plannerRole": "husband",
+      "profile": {
+        "likes": ["quiet art", "museum", "wine", "hidden places", "small venues"],
+        "avoids": ["crowded clubs", "tourist traps", "performative surprises", "loud standing-room events"],
+        "comfort": ["cultural", "culinary", "gallery", "jazz"],
+        "stretch": ["weird museum", "atelier", "guided tour", "new neighborhood"],
+        "searchKeywords": ["quiet", "museum", "gallery", "wine", "hidden"],
+        "budget": "medium",
+        "budgetComfort": "nice but not extravagant",
+        "freeTime": "evening",
+        "preferredDuration": "normal evening",
+        "energy": "low to medium",
+        "radiusKm": 6,
+        "privacyDefault": "secret until departure",
+        "surpriseStyle": "discreet and intimate",
+        "bookingStyle": "book ahead when it reduces friction",
+        "partnerSensitivity": "does not like being put on display",
+        "dateGoal": "make a regular week feel thoughtful without making it theatrical",
+        "fallbackNeed": "nearby calm drink or cafe"
+      },
+      "context": {
+        "locale": "urban bilingual household",
+        "background": "cross-cultural couple in their 30s",
+        "relationshipStage": "married, no children yet",
+        "constraint": "one partner dislikes loud crowded rooms"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["cultural", "culinary", "social"],
+        "requiredMatchReasonAnyOf": ["museum", "quiet", "hidden", "wine", "gallery"]
+      }
+    },
+    {
+      "id": "husband_active_budget",
+      "plannerRole": "husband",
+      "profile": {
+        "likes": ["outdoor", "walk", "casual food", "music", "markets"],
+        "avoids": ["formal fine dining", "expensive surprises", "dress code", "long seated events"],
+        "comfort": ["sportive", "culinary", "markets", "music"],
+        "stretch": ["small concert", "new park", "local festival", "food crawl"],
+        "searchKeywords": ["outdoor", "walk", "market", "music", "casual"],
+        "budget": "casual",
+        "budgetComfort": "price sensitive",
+        "freeTime": "Saturday afternoon or early evening",
+        "preferredDuration": "half day",
+        "energy": "medium active",
+        "radiusKm": 8,
+        "privacyDefault": "light secret",
+        "surpriseStyle": "easygoing",
+        "bookingStyle": "prefer free or low-commitment plans",
+        "partnerSensitivity": "does not want money pressure",
+        "dateGoal": "make a simple day feel like a planned shared adventure",
+        "fallbackNeed": "food stop and weather backup"
+      },
+      "context": {
+        "locale": "German-speaking Austrian household",
+        "background": "budget-conscious local couple",
+        "relationshipStage": "married, early career",
+        "constraint": "prefers movement without a workout feeling"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["sportive", "culinary", "social", "different"],
+        "requiredMatchReasonAnyOf": ["outdoor", "walk", "music", "market", "casual"]
+      }
+    },
+    {
+      "id": "husband_low_energy_parents",
+      "plannerRole": "husband",
+      "profile": {
+        "likes": ["short evening", "nearby", "calm dinner", "cinema", "easy logistics"],
+        "avoids": ["late night", "high effort", "long transit", "unpredictable queues"],
+        "comfort": ["cultural", "culinary", "cinema", "quiet"],
+        "stretch": ["small exhibition", "early show", "bookstore", "dessert walk"],
+        "searchKeywords": ["cinema", "nearby", "calm", "short", "easy"],
+        "budget": "casual",
+        "budgetComfort": "casual to medium",
+        "freeTime": "childcare window",
+        "preferredDuration": "short",
+        "energy": "low",
+        "radiusKm": 4,
+        "privacyDefault": "secret until departure",
+        "surpriseStyle": "low friction",
+        "bookingStyle": "must be reservable or easy to verify",
+        "partnerSensitivity": "tired partner should not need to make decisions",
+        "dateGoal": "protect time together even when energy is limited",
+        "fallbackNeed": "fast exit and nearby backup"
+      },
+      "context": {
+        "locale": "urban family schedule",
+        "background": "parents with limited childcare windows",
+        "relationshipStage": "married with young child",
+        "constraint": "needs a plan that still works when tired"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["cultural", "culinary", "social"],
+        "requiredMatchReasonAnyOf": ["cinema", "nearby", "calm", "short", "easy"]
+      }
+    },
+    {
+      "id": "husband_culture_stretch",
+      "plannerRole": "husband",
+      "profile": {
+        "likes": ["music", "museum", "river walk", "unusual food", "workshop"],
+        "avoids": ["standard dinner only", "tourist checklist", "embarrassing audience participation", "generic venue lists"],
+        "comfort": ["cultural", "social", "culinary", "walk"],
+        "stretch": ["workshop", "experimental performance", "odd museum", "maker studio"],
+        "searchKeywords": ["music", "museum", "walk", "workshop", "unusual"],
+        "budget": "medium",
+        "budgetComfort": "medium",
+        "freeTime": "Friday evening",
+        "preferredDuration": "normal evening",
+        "energy": "medium",
+        "radiusKm": 7,
+        "privacyDefault": "secret until arrival",
+        "surpriseStyle": "memorable but not performative",
+        "bookingStyle": "will book tickets if the plan feels original",
+        "partnerSensitivity": "novelty is good, public awkwardness is not",
+        "dateGoal": "break routine with something story-worthy",
+        "fallbackNeed": "simpler nearby bar or food option"
+      },
+      "context": {
+        "locale": "Austrian city household",
+        "background": "couple who knows the obvious city spots already",
+        "relationshipStage": "married several years",
+        "constraint": "needs novelty without making the night complicated"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["cultural", "social", "culinary", "sportive", "different"],
+        "requiredMatchReasonAnyOf": ["music", "museum", "walk", "workshop", "unusual"]
+      }
+    },
+    {
+      "id": "wife_romantic_logistics",
+      "plannerRole": "wife",
+      "profile": {
+        "likes": ["romantic walk", "classical music", "market", "beautiful setting", "good food"],
+        "avoids": ["too much planning friction", "generic restaurant list", "cheesy romance", "unclear timing"],
+        "comfort": ["cultural", "culinary", "romantic", "market"],
+        "stretch": ["small concert", "scenic route", "seasonal event", "dress-up dinner"],
+        "searchKeywords": ["music", "market", "romantic", "setting", "food"],
+        "budget": "nice",
+        "budgetComfort": "nice for special occasions",
+        "freeTime": "weekend",
+        "preferredDuration": "half day",
+        "energy": "low to medium",
+        "radiusKm": 8,
+        "privacyDefault": "soft reveal",
+        "surpriseStyle": "warm and polished",
+        "bookingStyle": "prefers a confirmed plan with clear timing",
+        "partnerSensitivity": "romantic should not become cheesy or overproduced",
+        "dateGoal": "make a familiar relationship feel intentionally celebrated",
+        "fallbackNeed": "weather-safe route and restaurant backup"
+      },
+      "context": {
+        "locale": "mixed local-expat household",
+        "background": "wife planning a birthday-adjacent date for her husband",
+        "relationshipStage": "married, established routine",
+        "constraint": "needs the plan to feel romantic without being cheesy"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["cultural", "culinary", "social", "sportive"],
+        "requiredMatchReasonAnyOf": ["music", "market", "romantic", "setting", "food"]
+      }
+    },
+    {
+      "id": "husband_sober_public_plans",
+      "plannerRole": "husband",
+      "profile": {
+        "likes": ["tea", "dessert", "cinema", "bookstores", "public places"],
+        "avoids": ["wine tasting", "cocktail bars", "beer halls", "party atmosphere", "late night pressure"],
+        "comfort": ["cultural", "culinary", "cinema", "bookstore"],
+        "stretch": ["tea ceremony", "dessert crawl", "poetry night", "small lecture"],
+        "searchKeywords": ["cinema", "tea", "dessert", "bookstore", "calm"],
+        "budget": "casual",
+        "budgetComfort": "casual but not bare minimum",
+        "freeTime": "early evening",
+        "preferredDuration": "short to normal evening",
+        "energy": "low to medium",
+        "radiusKm": 6,
+        "privacyDefault": "simple reveal",
+        "surpriseStyle": "warm, public, and low pressure",
+        "bookingStyle": "reserve seats when possible",
+        "partnerSensitivity": "does not drink and dislikes plans centered on alcohol",
+        "dateGoal": "create a relaxed night out without alcohol being the default social anchor",
+        "fallbackNeed": "non-alcoholic cafe or dessert option nearby"
+      },
+      "context": {
+        "locale": "urban Austrian household",
+        "background": "couple with sober social preferences",
+        "relationshipStage": "married several years",
+        "constraint": "avoid alcohol-led recommendations while still feeling adult and date-like"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["cultural", "culinary", "social"],
+        "requiredMatchReasonAnyOf": ["cinema", "tea", "dessert", "bookstore", "calm"]
+      }
+    },
+    {
+      "id": "husband_premium_low_time",
+      "plannerRole": "husband",
+      "profile": {
+        "likes": ["excellent food", "classical music", "hotel bar", "private tour", "beautiful interiors"],
+        "avoids": ["queueing", "unclear booking", "DIY logistics", "crowded free events"],
+        "comfort": ["premium", "culinary", "cultural", "romantic"],
+        "stretch": ["chef table", "private tasting", "after-hours tour", "small concert"],
+        "searchKeywords": ["premium", "reservation", "concert", "tasting", "hotel"],
+        "budget": "premium",
+        "budgetComfort": "comfortable paying for frictionless quality",
+        "freeTime": "one protected evening",
+        "preferredDuration": "normal evening",
+        "energy": "medium but time constrained",
+        "radiusKm": 5,
+        "privacyDefault": "soft reveal with booked details",
+        "surpriseStyle": "polished and efficient",
+        "bookingStyle": "book everything before revealing the plan",
+        "partnerSensitivity": "high standards but dislikes plans that feel showy",
+        "dateGoal": "make limited free time feel worth protecting",
+        "fallbackNeed": "confirmed backup reservation or lounge option"
+      },
+      "context": {
+        "locale": "city household with demanding work schedules",
+        "background": "dual-career couple with limited planning bandwidth",
+        "relationshipStage": "married, established careers",
+        "constraint": "must minimize logistics and uncertainty"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["premium", "culinary", "cultural", "romantic"],
+        "requiredMatchReasonAnyOf": ["food", "music", "tour", "booking", "quality"]
+      }
+    },
+    {
+      "id": "husband_accessibility_mobility",
+      "plannerRole": "husband",
+      "profile": {
+        "likes": ["seated events", "short walks", "museum", "scenic cafe", "early dinner"],
+        "avoids": ["stairs-heavy venues", "long standing events", "steep walks", "unclear entrances"],
+        "comfort": ["cultural", "culinary", "museum", "cinema"],
+        "stretch": ["accessible tour", "small concert with seating", "gallery talk", "river view cafe"],
+        "searchKeywords": ["museum", "seated", "accessible", "cafe", "short walk"],
+        "budget": "medium",
+        "budgetComfort": "medium if comfort is reliable",
+        "freeTime": "afternoon into early evening",
+        "preferredDuration": "short",
+        "energy": "low",
+        "radiusKm": 3,
+        "privacyDefault": "secret after logistics are checked",
+        "surpriseStyle": "considerate and practical",
+        "bookingStyle": "verify accessibility before saving the plan",
+        "partnerSensitivity": "mobility limits should be handled quietly, not made the theme",
+        "dateGoal": "make the plan feel normal and lovely while reducing physical friction",
+        "fallbackNeed": "nearby seated indoor backup"
+      },
+      "context": {
+        "locale": "urban household using transit and taxis",
+        "background": "couple managing temporary or recurring mobility limits",
+        "relationshipStage": "married several years",
+        "constraint": "needs short distances, seating, and low uncertainty"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["cultural", "culinary", "social"],
+        "requiredMatchReasonAnyOf": ["museum", "seated", "accessible", "cafe", "short walk"]
+      }
+    },
+    {
+      "id": "wife_expat_low_friction",
+      "plannerRole": "wife",
+      "profile": {
+        "likes": ["English-friendly", "food market", "live music", "cinema", "easy transit"],
+        "avoids": ["local-only insider assumptions", "complicated ticketing", "formal etiquette", "remote venues"],
+        "comfort": ["culinary", "social", "cultural", "music"],
+        "stretch": ["bilingual tour", "independent cinema", "small concert", "neighborhood food crawl"],
+        "searchKeywords": ["English", "market", "music", "cinema", "transit"],
+        "budget": "medium",
+        "budgetComfort": "medium with clear value",
+        "freeTime": "Saturday evening",
+        "preferredDuration": "normal evening",
+        "energy": "medium",
+        "radiusKm": 7,
+        "privacyDefault": "soft reveal",
+        "surpriseStyle": "welcoming and easy to understand",
+        "bookingStyle": "prefer clear websites and simple confirmation",
+        "partnerSensitivity": "partner should not feel lost because of language or local customs",
+        "dateGoal": "make the city feel shared rather than one partner's home turf",
+        "fallbackNeed": "transit-simple food or drink backup"
+      },
+      "context": {
+        "locale": "mixed local-expat household",
+        "background": "one partner is newer to Austrian city culture",
+        "relationshipStage": "married, relocated within the last few years",
+        "constraint": "language and local-knowledge friction should stay low"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["culinary", "social", "cultural"],
+        "requiredMatchReasonAnyOf": ["english", "market", "music", "cinema", "transit"]
+      }
+    },
+    {
+      "id": "husband_multilingual_family_window",
+      "plannerRole": "husband",
+      "profile": {
+        "likes": ["early dinner", "seasonal market", "easy parking", "short concert", "dessert"],
+        "avoids": ["late endings", "complex transfers", "high noise", "open-ended plans"],
+        "comfort": ["culinary", "market", "music", "family schedule"],
+        "stretch": ["seasonal pop-up", "short performance", "craft market", "tasting flight"],
+        "searchKeywords": ["early", "market", "parking", "concert", "dessert"],
+        "budget": "casual",
+        "budgetComfort": "casual to medium",
+        "freeTime": "two-hour babysitter window",
+        "preferredDuration": "short",
+        "energy": "low to medium",
+        "radiusKm": 5,
+        "privacyDefault": "secret until the babysitter is confirmed",
+        "surpriseStyle": "compact and thoughtful",
+        "bookingStyle": "needs times, travel, and fallback locked down",
+        "partnerSensitivity": "partner carries mental load and needs the plan to feel handled",
+        "dateGoal": "turn a small childcare window into a complete date",
+        "fallbackNeed": "quick dessert or cafe if the main event slips"
+      },
+      "context": {
+        "locale": "multilingual family household",
+        "background": "parents coordinating childcare and extended-family obligations",
+        "relationshipStage": "married with children",
+        "constraint": "tight timing and low tolerance for logistics surprises"
+      },
+      "expectation": {
+        "minOptionCount": 5,
+        "minQualityScore": 80,
+        "requiredTopCategoryAnyOf": ["culinary", "social", "cultural"],
+        "requiredMatchReasonAnyOf": ["workshop", "opening", "registration", "booking", "dates"]
+      }
+    }
+  ]
+}

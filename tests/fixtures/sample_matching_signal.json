@@ -1,0 +1,10 @@
+{
+  "eventType": "saved",
+  "candidate": {
+    "id": "fixture-candidate",
+    "title": "Small gallery evening",
+    "category": "cultural",
+    "sourceName": "Fixture Gallery",
+    "eventUrl": "https://example.test/gallery"
+  }
+}

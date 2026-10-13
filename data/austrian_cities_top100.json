@@ -1,0 +1,45 @@
+{
+  "cities": [
+    {
+      "name": "Vienna",
+      "country": "Austria",
+      "countryCode": "AT",
+      "region": "Vienna",
+      "population": 0,
+      "synthetic": true
+    },
+    {
+      "name": "Graz",
+      "country": "Austria",
+      "countryCode": "AT",
+      "region": "Graz",
+      "population": 0,
+      "synthetic": true
+    },
+    {
+      "name": "Linz",
+      "country": "Austria",
+      "countryCode": "AT",
+      "region": "Linz",
+      "population": 0,
+      "synthetic": true
+    },
+    {
+      "name": "Salzburg",
+      "country": "Austria",
+      "countryCode": "AT",
+      "region": "Salzburg",
+      "population": 0,
+      "synthetic": true
+    },
+    {
+      "name": "Innsbruck",
+      "country": "Austria",
+      "countryCode": "AT",
+      "region": "Innsbruck",
+      "population": 0,
+      "synthetic": true
+    }
+  ],
+  "synthetic": true
+}

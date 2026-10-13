@@ -1,0 +1,12 @@
+{
+  "city": "Vienna",
+  "date": "2026-06-12",
+  "extractEvents": false,
+  "coupleProfile": {
+    "homeBase": "Vienna",
+    "likes": ["art", "markets"],
+    "avoid": ["clubs"],
+    "usualDates": ["dinner"],
+    "specialMeans": ["thoughtful"]
+  }
+}
