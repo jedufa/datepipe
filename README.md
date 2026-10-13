@@ -14,7 +14,7 @@ Requires Python 3.11+ on a Unix-like host; verified with Python 3.14.4 on Linux.
 python3 server.py --host 127.0.0.1 --port 8812
 ```
 
-Open **http://127.0.0.1:8812/**. Start with the fictional demo, pick a calendar week, find ideas, make one plan, inspect its reveal hint/backup/checklist, then restart to check persistence. All people, venues and ideas in `data/` are fictional. Links use `.invalid`; they are not real booking or event recommendations. Add your own plans and verify actual places yourself.
+Open **http://127.0.0.1:8812/**. Start with the fictional demo, pick a calendar week, find ideas, make one plan, inspect its reveal hint/backup/checklist, then restart to check persistence. All people, venues and ideas in `data/` are fictional. Demo quality scores describe heuristics and field completeness, not verified venue/event quality. Links use `.invalid`; they are not real booking or event recommendations. Add your own plans and verify actual places yourself.
 
 For tests in a new disposable environment:
 
@@ -26,7 +26,7 @@ node --check static/app.js
 python3 -m py_compile server.py datepipe_backend/*.py
 ```
 
-Node is needed only for JavaScript syntax checking. Exact results and limits are in [build and test](docs/BUILD_AND_TEST.md).
+Node is needed for frontend syntax and the sorting-handler runtime regression. Exact results and limits are in [build and test](docs/BUILD_AND_TEST.md).
 
 ## Local and network behavior
 
